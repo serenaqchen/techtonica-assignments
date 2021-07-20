@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway&family=Roboto&display=swap');
+
+.obtained {
+  text-decoration: line-through;
+  color: #FEC89A;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 50%, 50%;
+  grid-template-rows: 5%, 5%, 10%, 25%, 50%, 5%;
+  grid-template-areas: 
+    "header header"
+    "nav nav"
+    "summary summary"
+    "picture ingredients"
+    "prep prep"
+    "footer footer";
+    font-family: 'Raleway', sans-serif;
+}
+
+.custom-nav{
+  background-color: #F9DCC4;
+  font-family: 'Raleway', sans-serif;
+}
+
+section{
+  padding-top: 70px;
+  
+}
+h1{
+  text-align: center;
+  font-family: 'Julius Sans One', sans-serif !important;
+  padding-bottom: 20px; 
+}
+
+h2{
+  margin: auto;
+  width: 80%;
+  /* border: 3px solid green; */
+  padding: 10px;
+  font-family: 'Julius Sans One', sans-serif !important;
+  font-size: 30px;
+}
+
+h3{
+  font-size: 20px;
+}
+
+article{
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+#Title{
+  grid-area: header;
+  background-color: #F9DCC4;
+}
+
+#Summary{
+  grid-area: summary;
+}
+.summary-info-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: #F9DCC4;
+  border-radius: 10px;
+}
+.summary-info{
+  display: inline-block;
+  text-align: center;
+  /* border: 3px solid red; */
+  padding: 10px 30px 10px 5px;
+  margin: 10px 10px 10px 0;
+}
+
+.icons{
+  display: inline-block;
+  text-align: center;
+  /* border: 3px solid red; */
+  padding: 10px 5px 10px 30px;
+  margin: 10px 0px 10px 10px;
+}
+
+
+#honey-walnut-shrimp {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  grid-area: picture;
+  width: 75%;
+  height: auto;
+}
+
+#Ingredients{
+  grid-area: ingredients;
+  padding-top: 105px; 
+}
+
+li { 
+  list-style: square; 
+} 
+
+#Preparation{
+  grid-area: prep;
+}
+
+footer{
+  grid-area: footer;
+  text-align: center;
+  background-color: #F9DCC4;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px 0 5px 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
