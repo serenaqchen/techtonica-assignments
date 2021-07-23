@@ -117,6 +117,10 @@ li {
   grid-area: prep;
 }
 
+#prepNav{
+  padding-top: 100px;
+}
+
 .footer{
   grid-area: footer;
   text-align: center;
