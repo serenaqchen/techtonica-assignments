@@ -99,42 +99,68 @@
     </section>
 
     <section id="projects">
-      <div class="container">
-        <h1>My Projects</h1>
-        <div class="line-break"></div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+      <div>
+        <div>
+          <h1>My Projects</h1>
+        </div>
+        <div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contactMe">
       <div class="container contactMeContainer">
-        <h1>Contact Me</h1>
-        <div class="line-break"></div>
-        <form>
-          <label for="username">First Name:</label>
-          <input id="username" type="text" name="username" required pattern="[A-Za-z]+">
-          <br><br>
-          <label for="username">Last Name:</label>
-          <input id="username" type="text" name="username" required pattern="[A-Za-z]+">
-          <br><br>
-          <label for="username">Email:</label>
-          <input id="username" type="text" name="username" required pattern="[A-Za-z]+">
-          <br><br>
-          <div class="officeLocation">
-           <label for="officeLoc">Which location would you like to open your account at?</label>
-           <br>
-           <select name="officeLoc" id="officeLoc">
-            <option value="sanFrancisco">San Francisco</option>
-            <option value="oakland">Oakland</option>
-            <option value="sanLeandro">San Leandro</option>
-           </select>
-          </div>
-        </form>
+        <div class="CMleft">
+          <h1>Contact Me</h1>
+        </div>
+        <div class="CMright">
+          <p>
+            Want to reach me? Please fill out this form and I'll get back to you shortly! Thank you!
+          </p>
+          <form>
+            <label for="username">First Name:</label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              required
+              pattern="[A-Za-z]+"
+            />
+            <br /><br />
+            <label for="username">Last Name:</label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              required
+              pattern="[A-Za-z]+"
+            />
+            <br /><br />
+            <label for="username">Email:</label>
+            <input id="username" type="text" name="username" required />
+            <br /><br />
+            <label for="address">Address:</label>
+            <input id="address" type="text" name="address" />
+            <br><br>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </section>
     <!--bootstrap JS-->
