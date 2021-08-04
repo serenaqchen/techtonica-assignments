@@ -5,21 +5,19 @@ class Event {
     this.description = description;
     this.availableTickets = [];
     this.addAvailableTickets = function(name, price){
-        this.availableTickets.push(new TicketType(name, price));
+        this.availableTickets.push(new TicketType(name, price))
     };
     this.allTickets = function () {
         let result = "";
-        for (let i = 0; i <= this.addAvailableTickets.length; i++){
+        for (let i = 0; i <= this.availableTickets.length; i++){
             result = result.concat(` ${i+1}. ${this.availableTickets[i].name} ($${this.availableTickets[i].price})`)
-            console.log(i)
       }
         return 'All tickets:'.concat(result)
     };
     this.searchTickets = function (lower, upper) {
         let result = "";
-        for (let i = 0; i < this.addAvailableTickets.length; i++){
+        for (let i = 0; i < this.availableTickets.length; i++){
             let ticketPrice = this.availableTickets[i].price
-            console.log(ticketPrice)
             if (ticketPrice > lower && ticketPrice < upper){
                 result = result.concat(` ${i+1}. ${this.availableTickets[i].name} ($${this.availableTickets[i].price})`);
             }
@@ -58,7 +56,7 @@ const eventArray = new Array();
 eventArray.push(eventObj1, eventObj2, eventObj3);
 
 // in order to check whether the elements are pushed, use console.log
-console.log(eventArray);
+// console.log(eventArray);
 
 //adding new ticket types
 eventObj1.addAvailableTickets("human", 299);
@@ -68,10 +66,7 @@ eventObj2.addAvailableTickets("Floor Seating", 80);
 eventObj3.addAvailableTickets("Balcony", 100);
 eventObj3.addAvailableTickets("Orchestra", 300);
 eventObj3.addAvailableTickets("Mezzanine", 200);
-eventObj3.addAvailableTickets("serena", 90);
 
-
-console.log(eventObj3.availableTickets)
 console.log(eventObj3.searchTickets(10, 110))
 
 //select html element 
