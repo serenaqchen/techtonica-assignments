@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lato&family=Work+Sans:wght@600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 18px;
+  }
+
+/* body{
+  background-color: #7389ae;
+} */
+
+main{
+  margin: 40px 300px 40px 300px;
+  padding: 50px 0 50px 0;
+  background-color: #b5bad0;
+  border-radius: 8px;
+}
+
+h1{
+  font-size: 45px;
+  font-family: 'Staatliches';
+  letter-spacing: 5px;
+}
+h2{
+  font-size: 20px;
+  font-family: 'Staatliches';
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+li{
+  margin: 20px;
+}
+
+#title{
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 50px;
+}
+
+#inputForm{
+  /* display: flex;
+  justify-content: center; */
+  margin: 40px;
+}
+
+.submission{
+  /* display: flex;
+  justify-content: center; */
+  margin: 40px 20px 20px 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input{
+  width: auto;
+  padding: 5px 20px;
+  font-size: 30px;
+  border-radius: 8px;
+  border: none;
+}
+#submitButton{
+  margin-left: 20px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  background-color: #7389ae;
+  border: none;
+}
+
+#submitButton:hover{
+  background-color: #EFC69B;
+  color: white;
+  border: none;
+}
+
+/* #response{
+  display: flex;
+  justify-content: center;
+} */
+
+#hint{
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 20px;
+}
+
+.greaterThan, .lessThan{
+  margin: 20px;
+  padding: 50px 50px 70px 50px;
+  width: 300px;
+  background-color: #EFC69B;
+  border-radius: 15px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.hide{
+  display: none;
+}
+
+.playagain{
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+.win{
+  font-size: 20px;
+  background-color: #EFC69B;
+  border-radius: 15px;
+  padding: 20px;
+}

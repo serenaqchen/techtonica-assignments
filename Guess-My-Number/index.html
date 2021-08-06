@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <section id="title" class="center">
+        <h1>Guess My Number Game</h1>
+      </section>
+      <section id="inputForm" class="center">
+        <form action="#" onSubmit="return false">
+          <label for="guessNum"
+            >Guess a number between 1 and 100. Good Luck!</label
+          >
+          <div class="submission center">
+            <input
+            type="number"
+            name="guessNum"
+            id="guessNum"
+            min="0"
+            max="100"
+          />
+          <button id="submitButton">Submit</button>
+          </div>
+        </form>
+      </section>
+      <section id="response" class="center">
+        <p>May the odds be in your favor</p>
+      </section>
+      <!-- Want to add play again button in the future -->
+      <!-- <div id="playAgain"  class="hide">
+        <button id="playAgainButton">Play Again</button>
+      </div> -->
+      <section id="hint" class="center">
+        <section class="lessThan">
+          <h2>Less Than:</h2>
+          <ul id="lessList" class="center">
+
+          </ul>
+        </section>
+        <section class="greaterThan">
+          <h2>Greater Than:</h2>
+          <ul id="greaterList" class="center">
+
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="./script.js"></script>
+</html>
