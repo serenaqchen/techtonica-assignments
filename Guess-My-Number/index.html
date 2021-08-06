@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess My Number</title>
     <link href="./style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <form action="#" onSubmit="return false">
-        <label for="guessNum">Guess the secret number:</label>
-        <input type="number" name="guessNum" id="guessNum" min="0" max="100">
-        <button>Submit</button>
-        <div id="notification">
-
-        </div>
-    </form>
-</body>
-<script src="./script.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="title">
+        <h1>Guess My Number Game</h1>
+      </section>
+      <section id="inputForm">
+        <form action="#" onSubmit="return false">
+          <label for="guessNum"
+            >Guess a number between 1 and 100. Good Luck!</label
+          >
+          <br />
+          <input
+            type="number"
+            name="guessNum"
+            id="guessNum"
+            min="0"
+            max="100"
+          />
+          <button id="submitButton">Submit</button>
+          <div id="notification"></div>
+        </form>
+      </section>
+      <section id="reply">
+        <p>placeholder: Try again!</p>
+      </section>
+      <section id="hint">
+        <section class="lessThan">
+          <p>placeholder</p>
+        </section>
+        <section class="greaterThan">
+          <p>placeholder</p>
+        </section>
+      </section>
+    </main>
+  </body>
+  <script src="./script.js"></script>
 </html>

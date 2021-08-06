@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+  }
+
+#title{
+  display: flex;
+  justify-content: center;
+}
+
+#inputForm{
+  display: flex;
+  justify-content: center;
+}
+
+#reply{
+  display: flex;
+  justify-content: center;
+}
+input{
+  display: flex;
+  justify-content: center;
+}

@@ -22,15 +22,17 @@ function checkNum(){
         } else {
             notification.innerHTML = `Congratulations! You guessed the secret number in ${wrongGuesses + 1} tries!`
         }
-        document.getElementById('notification').appendChild(notification)
+        document.getElementById('notification').appendChild(notification);
+        //refreshes page 
+        // document.querySelector("form").setAttribute("onSubmit", "return true");
     } else {
         wrongGuesses += 1;
         prevGuesses.push(userGuess);
         let notification = document.createElement('p')
-        notification.innerHTML = `Guess again!`
-        document.getElementById('notification').appendChild(notification)
+        notification.innerHTML = `Guess again!`;
+        document.getElementById('notification').appendChild(notification);
     }
 }
 
 //add event listener for when user submits a guess
-document.querySelector('button').addEventListener('click', checkNum);
+document.getElementById('submitButton').addEventListener('click', checkNum);
