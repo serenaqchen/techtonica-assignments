@@ -8,7 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    color: black;
+    color: white;
     font-size: 18px;
   }
 
@@ -72,6 +72,7 @@ input{
   font-size: 30px;
   border-radius: 8px;
   border: none;
+  color:black;
 }
 #submitButton{
   margin-left: 20px;
