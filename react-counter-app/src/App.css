@@ -1,0 +1,27 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 25px;
+  background-color: #fffcf7;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+button {
+  background-color: #a1b5d8;
+  margin: 5px;
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+p{
+  margin: 45px;
+}
