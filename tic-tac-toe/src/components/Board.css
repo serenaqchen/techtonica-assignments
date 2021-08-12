@@ -1,0 +1,8 @@
+.board {
+  border: 5px solid gainsboro;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}

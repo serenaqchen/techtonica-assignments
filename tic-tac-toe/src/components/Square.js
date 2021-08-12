@@ -1,8 +1,9 @@
 import React from 'react';
+import './Square.css';
 
 function Square({ value, onClick}){
   return (
-    <button onClick={onClick}>{value}</button>
+    <button className="square" onClick={onClick}>{value}</button>
   )
 }
 
