@@ -1,6 +1,6 @@
 .kitty{
   background-color: white;
-  border: transparent;
+  border: 5px solid white;
   border-radius: 5px;
 }
 
