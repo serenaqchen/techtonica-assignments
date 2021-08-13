@@ -38,7 +38,7 @@ function Game(){
       return(
         <div>
           <p>Congratulations!</p>
-          {winner === 'Gray Cat' ? <GrayCatIcon /> : <WhiteCatIcon />}
+          {winner === 'Gray Cat' ? <GrayCatIcon klass="kitty"/> : <WhiteCatIcon klass="kitty"/>}
           <p>You are the winner!</p>
         </div>
       )
@@ -46,14 +46,14 @@ function Game(){
       if(xIsNext){
         return (
           <div>
-            <p>Next Player</p>
-            <GrayCatIcon />
+            <p>Next Kitty</p>
+            <GrayCatIcon klass="kitty"/>
           </div>)
       } else{
           return (
           <div>
-            <p>Next Player</p>
-            <WhiteCatIcon />
+            <p>Next Kitty</p>
+            <WhiteCatIcon klass="kitty"/>
           </div>
         )
       }

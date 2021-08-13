@@ -9,9 +9,9 @@ function Square({ value, onClick}){
 
   function whichCat(){
     if (value === 'Gray Cat'){
-      return <GrayCatIcon />
+      return <GrayCatIcon klass="none"/>
     } else if (value === "White Cat") {
-      return <WhiteCatIcon />
+      return <WhiteCatIcon klass="none" />
     }
   }
 

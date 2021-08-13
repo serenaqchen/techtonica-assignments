@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   color:#fffcf7;
+  text-shadow: 6px 6px #7589ad;
 }
 
 .catimg{
@@ -32,6 +33,7 @@ h1{
   color: #7589ad;
   font-size: 20px;
   margin: 15px;
+  box-shadow: 5px 5px #7589ad;
 }
 
 .restartButton:hover{
@@ -39,6 +41,7 @@ h1{
   color: #fffcf7;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  box-shadow: 5px 5px #fffcf7;
 }
 
 p{
@@ -46,5 +49,9 @@ p{
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   margin-top: 25px;
+}
+
+.kitty{
+  border: 2px solid black;
 }
 
