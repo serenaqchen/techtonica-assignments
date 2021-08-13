@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 import calculateWinner from '../helpers';
 import Board from './Board';
 import './Game.css';
+import GrayCatIcon from './GrayCatIcon';
+import WhiteCatIcon from './WhiteCatIcon';
+// import cuteCat from '../cuteCat.png'
 
 //creating the game component that has hooks
 function Game(){
@@ -21,20 +24,52 @@ function Game(){
     // If user click an occupied square or if game is won, return
     if (winner || boardCopy[i]) return;
     // Put an X or an O in the clicked square
-    boardCopy[i] = xIsNext ? "X" : "O";
+    boardCopy[i] = xIsNext ? "Gray Cat" : "White Cat";
     setBoard(boardCopy);
     setXisNext(!xIsNext);
   }
 
   function renderMoves(){
-    return <button onClick={() => setBoard(Array(9).fill(null))}>Restart Game</button>
+    return <button className="restartButton" onClick={() => setBoard(Array(9).fill(null))}>Restart Game</button>
   }
   
+  function displayPlayer(){
+    if(winner){
+      return(
+        <div>
+          <p>Congratulations!</p>
+          {winner === 'Gray Cat' ? <GrayCatIcon /> : <WhiteCatIcon />}
+          <p>You are the winner!</p>
+        </div>
+      )
+    } else {
+      if(xIsNext){
+        return (
+          <div>
+            <p>Next Player</p>
+            <GrayCatIcon />
+          </div>)
+      } else{
+          return (
+          <div>
+            <p>Next Player</p>
+            <WhiteCatIcon />
+          </div>
+        )
+      }
+    }
+  }
+
   return (
     <>
+    <div className="title">
+      {/* <img className="catimg" src={cuteCat} alt="Cat Paw" /> */}
+      <h1>Tic-Tac-Paw</h1>
+      {/* <img className="reversed catimg" src={cuteCat} alt="Cat Paw" /> */}
+    </div>
     <Board squares={board} onClick={handleClick} />
-    <div>
-      <p>{winner ? `Winner: ${winner}` : `Next Player: ${xIsNext ? 'X' : 'O'}`}</p>
+    <div className="displayPlayer">
+      {displayPlayer()}
       {renderMoves()}
     </div>
     </>
