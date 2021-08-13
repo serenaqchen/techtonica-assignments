@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+  border: 2px solid transparent;
+  margin: 50px 500px;
+  padding-bottom: 50px;
+  background-color: #a1b5d8;
+  border-radius: 15px;
+  /* box-shadow: 10px 10px #7589ad; */
+}

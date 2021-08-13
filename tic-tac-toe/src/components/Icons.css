@@ -1,0 +1,9 @@
+.kitty{
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.none{
+  background-color: transparent;
+}

@@ -1,0 +1,23 @@
+.square {
+  background: #fffcf7;
+  border: 2px solid #a1b5d8;
+  font-size: 30px;
+  font-weight:  800;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  margin: 2px;
+}
+.square:hover{
+  background-color: #7589ad;
+}
+
+/* .blue{
+  background: #7D98C7;
+  border: 2px solid #fffcf7;
+} */
+
+/* .green{
+  background: #ADC3EA;
+  border: 2px solid #fffcf7;
+} */
