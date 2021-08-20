@@ -34,10 +34,20 @@ app.post('/book', (req, res) => {
 
 });
 
+
+app.get('/newbook', (req, res) => {
+    res.sendFile(`${__dirname}/new-book.html`);
+});
+
 //getting the book list
+app.get('/booklist', (req, res) => {
+    res.sendFile(`${__dirname}/book-list.html`);
+});
+
 app.get('/books', (req, res) => {
     res.json(books);
 });
+
 
 //Retrieving a Book by ISBN
 app.get('/book/:isbn', (req, res) => {
