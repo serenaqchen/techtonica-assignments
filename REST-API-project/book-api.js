@@ -35,14 +35,14 @@ app.post('/book', (req, res) => {
 });
 
 
-// app.get('/newbook', (req, res) => {
-//     res.sendFile(`${__dirname}/new-book.html`);
-// });
+app.get('/newbook', (req, res) => {
+    res.sendFile(`${__dirname}/new-book.html`);
+});
 
-// //getting the book list
-// app.get('/book-list', (req, res) => {
-//     res.sendFile(`${__dirname}/book-list.html`);
-// });
+//getting the book list
+app.get('/booklist', (req, res) => {
+    res.sendFile(`${__dirname}/book-list.html`);
+});
 
 app.get('/books', (req, res) => {
     res.json(books);
