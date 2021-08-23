@@ -7,7 +7,9 @@ function Homepage() {
   //this is a placeholder for when 
   let cityName = ""
   
-  function city (cityName) { 
+  function city () { 
+    const input = document.getElementById("city").value;
+
     if (typeof cityName === "string" && cityName.length != 0 ){
       return <WeatherForcast city={cityName} />
     }
@@ -17,13 +19,14 @@ function Homepage() {
    <div className="homepage">
      <main>
        <h1>Weather Forcast</h1>
-       <form action="" method="post" class="form-1">
-         <div class="form-1">
-          <label id="cityLabel" for="city">Which city would you like to see the weather forcast for?</label>
-          <input type="text" id="city"></input>
-         </div>
-       </form>
-       {city(cityName)}
+       <form action="http://localhost:3001/search" method="POST">
+        <div className="form-group">
+          <label id="cityLabel" for="city">Please enter city or zip code</label>
+          <input id="city" className="form-control" name="city" placeholder="Search City or Zip Code"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+       {city()}
      </main>
    </div>
  );
