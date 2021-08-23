@@ -1,0 +1,10 @@
+#cityLabel{
+  display: none;
+}
+
+#city{
+  border-radius: 10px;
+  height: 25px;
+  background-color: bisque;
+  border: none;
+}
