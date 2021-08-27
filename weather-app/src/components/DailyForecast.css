@@ -1,0 +1,53 @@
+
+
+.conditionIcon{
+  width: 50px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: -15px;
+}
+
+#condition{
+  color: gray;
+  font-size: 10px;
+}
+
+#dayOfWeek{
+  font-size: 20px;  
+  margin-bottom: -10px;
+}
+
+#fullDate{
+  color: gray;
+  font-size: 12px;
+}
+
+#data{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info{
+  display: inline-block;
+  font-size: 15px;
+  margin: -.5px 0px;
+  text-align: left;
+  list-style: none;
+}
+
+.info span {
+  margin-left: -1.5em;
+  padding-top: 1px;
+}
+
+@media screen and (max-width: 767px) {
+  #day {
+    border: solid 2px gainsboro;
+    margin: 20px 50px;
+    border-radius: 20px;
+  }
+}
