@@ -1,0 +1,36 @@
+#cityLabel{
+  display: none;
+}
+
+#city{
+  height: 30px;
+  width: 200px;
+  text-align:center;
+  border: none;
+  background-color: #b6ccfe;
+  border-radius: 20px;
+  color: white;
+}
+
+#text{
+  padding-top: 80px;
+}
+
+.disappear{
+  display: none;
+}
+
+#logo{
+  height: 150px;
+  width: auto;
+  margin-top: 30px;
+}
+
+::placeholder{
+  color: white;
+}
+
+#search{
+  font-size: 50px;
+
+}

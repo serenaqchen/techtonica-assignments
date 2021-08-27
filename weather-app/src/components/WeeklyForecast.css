@@ -1,0 +1,34 @@
+.disappear{
+  display: none;
+}
+#cityName{
+  font-size: 25px;
+}
+#dailyForecasts{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.conditionIcon1{
+  height: 155px;
+  width: auto;
+  margin: 25px 0 -25px 0;
+}
+
+#currentForecast{
+  border: solid 2px gainsboro;
+  margin: 5px 100px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #dailyForecasts{
+    display: flex;
+    flex-direction: column;
+  }
+  #currentForecast{
+    border: solid 2px gainsboro;
+    margin: 0px 20px;
+    border-radius: 20px;
+  }
+}
