@@ -1,0 +1,26 @@
+.restartButton{
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  margin: 5px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.restartButton:hover{
+  color: white;
+  background-color: #FAB761;
+}
+
+.endgame{
+  background-color: #8B81B4;
+  margin: 15% 15%;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 8px #bababa;
+}
+
+.endgameText{
+  color: white;
+}
