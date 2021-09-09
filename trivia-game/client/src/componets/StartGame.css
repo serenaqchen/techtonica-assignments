@@ -1,0 +1,40 @@
+
+.header{
+  height: 180px;
+  background-color: #8B81B4;
+}
+
+.play{
+  background-color: #8B81B4;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: left;
+  padding: 60px;
+  color: white;
+  font-family: 'Patua One';
+  font-size: 30px;
+}
+
+.description{
+  border: 2px solid white;
+  border-radius: 5px;
+  margin: -40px 15% 0 15%;
+  background-color: white;
+  padding: 85px 0 100px 0;
+  box-shadow: 5px 10px 8px #bababa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.startButton{
+  background-color: #8B81B4;
+  color: white;
+  border: transparent;
+  padding: 10px 15px;
+  border-radius: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.startButton:hover{
+  background-color: #988CC5;
+  font-family: 'Montserrat', sans-serif;
+}

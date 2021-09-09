@@ -1,0 +1,90 @@
+
+button:disabled:hover{
+  background-color: rgb(240, 240, 240) !important;
+  color: black !important;
+}
+
+button:disabled {
+  color: black;
+}
+
+button:hover{
+  background-color: #988CC5;
+}
+
+.Qcounter{
+  color: #FAB761;
+}
+
+.counterBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+button.option{
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  margin: 10px;
+  width: 70%;
+  height: 100px;
+  font-size: 16px;
+  box-shadow: 5px 10px 8px #bababa;
+}
+button.option:hover{
+  background-color: #988CC5;
+  color: white;
+}
+
+.correctButton{
+  background-color: #8B81B4 !important;
+  color:white !important;
+  
+}
+
+.correctButton:disabled:hover{
+  background-color: #8B81B4 !important;
+  color: white !important;
+}
+.Question{
+  font-size: 20px;
+}
+
+.nextQ{
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  margin: 5px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  box-shadow: 5px 10px 8px #bababa;
+}
+.nextQ:hover{
+  background-color: #FAB761;
+  color: white;
+}
+
+.optionsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message{
+  color: #FAB761;
+}
+
+.Question{
+  margin: 5px 25px;
+}
+
+.Trivia{
+  background-color: #F1F3F4;
+  margin: 10px 45px;
+  padding-bottom: 30px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
