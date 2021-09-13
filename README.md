@@ -1,1 +1,1 @@
-# techtonica-assignments
+# eventonica
