@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fascinate+Inline&family=Urbanist:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap');
+
+
+fieldset {
+  border: none;
+  margin: 1rem 0;
+}
+
+header {
+  /* For more about flexbox, see https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-family: 'Major Mono Display', monospace;
+
+
+}
+
+header img {
+  height: 64px;
+  margin-right: 1em;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+}
+
+aside {
+  margin-left: 2em;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: small;
+  color: gray;
+}
+h2, h3{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bolder;
+}
+
+.event-title{
+  padding-right: 550px;
+}
+
+
+label{
+  padding-right: 20px;
+}
